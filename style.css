@@ -3,13 +3,21 @@
   margin: 0;
 }
 
-#myVideo {
-	z-index: -1;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+#container {
+	min-height: 100vh;
+	font-family: 'Orbitron', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	height: 50vh;
+	background-color: #abd699;
+}
+
+.bottom {
+	height: 50vh;
+	background-color: #86C16D;
 }
 
 nav {
@@ -35,14 +43,14 @@ nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-shadow: 1px 1px #2f4c58;
 }
 
 nav ul li a:hover {
-	color: #6e93d6;
+	color: #86C16D;
 	transition: .9s;
 }
 
@@ -62,21 +70,34 @@ nav ul lia a:after {
 	transition: transform 250ms;
 }
 
-.firstDiv {
-	font-family: 'Fira Sans', sans-serif;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+.top h4 {
+	white-space: nowrap;
+	font-weight: thin;
+	font-size: 25px;
+	color: #86C16D;
+	margin: 0;
+	position: absolute;
+	left: 1%;
+	top: 33%;
 }
 
-.firstDiv h1 {
+.top h1 {
 	white-space: nowrap;
+	font-weight: bold;
 	font-size: 60px;
 	color: white;
-	text-shadow: 2px 2px #000;
 	margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 37.5%;
+  left: 1%;
+}
+.bottom h1 {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 60px;
+	color: #fff;
+	margin: 0;
+  position: absolute;
+  top: 51%;
+  left: 1%;
 }
