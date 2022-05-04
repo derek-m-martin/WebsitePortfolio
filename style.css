@@ -54,7 +54,7 @@ nav ul li a:hover {
 	transition: .9s;
 }
 
-nav ul lia a:after {
+nav ul li a:after {
 	content: '';
 	position: absolute;
 	left: 50%;
@@ -70,10 +70,14 @@ nav ul lia a:after {
 	transition: transform 250ms;
 }
 
+nav ul li a:hover:after {
+	-webkit-transform:translateX(-50%) scaleX(1);
+	transform:translateX(-50%) scaleX(1);
+}
+
 .top h4 {
 	white-space: nowrap;
-	font-weight: thin;
-	font-size: 25px;
+	font-size: 30px;
 	color: #86C16D;
 	margin: 0;
 	position: absolute;
